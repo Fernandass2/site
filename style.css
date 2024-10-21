@@ -1,1 +1,53 @@
-@charset "UTF-8";
+@charset "UFT-8";
+
+/**** Breakpoints ****/
+
+/**** Smartphones Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/**** Smartphones Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+body {
+    background-color: #fcfcfc;
+    
+    }
+}
+/**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/**** Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+    body {
+        background-color: #d8bfd8;
+        
+        }
+    }
+/**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/**** Tablet Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    body {
+        background-color: #a020f0;
+       
+        }
+    }
+/* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    body {
+        background-color: #b0c4de;
+        color:white;
+        
+        }
+    }
+/**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* Telas FullHd / 4k /  SmartTVs >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1400px) {
+    body {
+        background-color:#4b0082 ;
+        color: antiquewhite;
+     
+        }
+    }
+/**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
