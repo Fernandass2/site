@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .sobre {
     padding: 40px;
     background-color: #f9f9f9; /* Cinza claro */
@@ -34,3 +35,41 @@
     line-height: 1.6;
     color: #555; /* Cinza escuro */
 }
+=======
+.sobre {
+    padding: 40px;
+    background-color: #f9f9f9; /* Cinza claro */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sobre h2 {
+    color: #1a1a1a; /* Verde */
+    margin-bottom: 20px;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-imagem {
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 300px; /* Limita a largura da imagem */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto {
+    text-align: left;
+}
+
+.sobre-texto p {
+    line-height: 1.6;
+    color: #555; /* Cinza escuro */
+}
+>>>>>>> 9c8b3f5924b28e7122e8fbb86d30f98206f1e87e
