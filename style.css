@@ -1,53 +1,105 @@
 @charset "UFT-8";
 
-/**** Breakpoints ****/
+/* Importação de font (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CSS Reset */
+*{
+    margin:  0;
+    padding: 0;
+    border:  0;
+}
+
+/* Layout */
+
+body {
+    font-family: "Open Sans", serif;
+    font-size: 1em; /* 1em = 100% (tamanho padrão)*/
+}
 
 /**** Smartphones Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/*Cabeçalho*/
+header{
+    height: 80x;
+    background-color: #000000;
 
+}
+.container {
+    margin: 0 auto; /* Margem centralizar o bloco */
+
+}
+
+#logo img{
+    width:  80px;
+    height: 80px;
+    margin: 0px 0px 0px 10px;
+}
 /**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /**** Smartphones Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-body {
-    background-color: #fcfcfc;
-    
-    }
+  /*Cabeçalho*/
+#logo img{
+    margin: 0px 0px 55px 0px;    
+}
+.container{
+    max-width: 540px;
+    background-color: rgb(250, 237, 237);
+}
 }
 /**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /**** Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
-    body {
-        background-color: #d8bfd8;
-        
-        }
-    }
+@media (min-width: 720px) {
+    /*Cabeçalho*/
+.container {
+    max-width: 720px;
+    background-color: rgb(167, 6, 6));
+}
+ header{
+    height: 110px;
+}
+#logo img {
+    width: 100px;
+    height: 100px;
+}
+}
 /**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /**** Tablet Lanscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    body {
-        background-color: #a020f0;
-       
-        }
-    }
+    /*Cabeçalho*/
+.container{
+    max-width: 960px;
+    background-color: #ff00aa;
+}
+}
+
 /* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    body {
-        background-color: #b0c4de;
-        color:white;
-        
-        }
-    }
+    /*Cabeçalho*/
+ .container{
+    max-width: 1140px;
+    background-color: #red;
+ }  
+#logo img{
+    width: 150px;
+    height: 140px;
+}
+}
 /**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /* Telas FullHd / 4k /  SmartTVs >>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1400px) {
-    body {
-        background-color:#4b0082 ;
-        color: antiquewhite;
-     
-        }
+    .container{
+        max-width: 1360px ;
+        background-color: bisque;
     }
-/**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+    #logo img{
+        width: 114px;
+        height: 100px;
+    }
+    }
+
+    /**** <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
