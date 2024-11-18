@@ -1,357 +1,540 @@
-@charset "UTF-8";
+/*
+    Folha de estilo do site One Page HTML5 e CSS3
+    html5css3.com.br
+    @author Professor José de Assis
+    joseassis.com.br
+*/
 
-/* Importação de font ( google fonts) */
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+/* Importação (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 /* Variavéis */
 
-:root {
+:root{
     --azul: #05152b;
     --branco: #fff;
-    --azure: #E0FFFF;
     --preto: #000000;
-    --roxo: #6959CD;
+    --roxo : #6959CD;
+    
 
 }
-
-/* CSS Reset (compatibilizar com todos navegadores */
+/* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  background-color:  var(--branco);
 }
 
 /* Layout */
-body {
-    font-family: "Open Sans", serif;
-    font-size: 1em;
-    /* 1em = 100% ( tamanho padrão )*/
-    background-color: var(--branco);
-
+.Container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
 }
 
-.container {
-    margin: 0 auto;
-    /* margem centralizada o bloco*/
-    display: flex;
-    justify-content: space-between;
-    /* Para alinhar à esquerda */
-    align-self: center;
-
+.Flex,
+.Flex2,
+.Flex3,
+.Flex4,
+.Flex5,
+.Flex6 {
+  display: flex;
 }
 
-.botao {
-    text-decoration: none;
-    color: var(--roxo);
-    font-size: 1.3em;
-    background-color: var(--preto);
-    width: 200px;
-    padding: 5px 0px;
-    border: 2px solid var(--preto);
-    border-radius: 25px;
-    align-self: center;
-    margin-top: 20px;
-
-
-
-
+.Flex {
+  justify-content: space-between;
 }
 
-/*Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.Flex2 {
+  align-items: center;
+}
 
+.Flex3,
+.Flex6 {
+  flex-direction: column;
+}
 
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.Flex4 {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Flex5 {
+  flex-direction: column-reverse;
+}
+
+.Flex6 {
+  justify-content: space-around;
+}
+
+/* Botão */
+.Botao {
+  text-decoration: none;
+  color: var(--roxo);
+  font-size: 1.3em;
+  background-color:  var(--preto);
+  width: 200px;
+  font-weight: 700;
+  padding: 5px 0px;
+  border: 2px solid var(--preto);
+  border-radius: 25px;
+  align-self:center
+}
+
+/* topo do site */
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* Cartões */
+.Card {
+  margin-top: 25px;
+  width: 338px;
+  height: 500px;
+  background-color: #e8e8e8;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.Card img {
+  border-radius: 15px 25px 0px 0px;
+}
+
+.Card h3 {
+  margin-top: 15px;
+}
+
+.Card p {
+  text-align: left;
+  color: #434343;
+  padding: 10px 30px 50px 30px;
+}
+
+.Card a {
+  padding: 10px 100px;
+  border: 0;
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 /* Cabeçalho */
 header {
-    height: 100px;
-    /*background-color: rgb(13, 187, 199);*/
+  height: 100px;
 }
 
 #logo img {
-    width: 128px;
-    height: 128px;
+  width: 128px;
+  height: 128.25px;
+  margin-top: 10px;
 }
 
-#Check {
-    display: none;
+#check {
+  display: none;
 }
-
-/*Efeito de deslizar o menu */
-/*Se Check estiver "ticado", criar um estilo para ul*/
-#Check:checked~ul {
-    right: 0;
-
-}
-
 
 label {
-    font-size: 3em;
-    position: fixed;
-    top: 5px;
-    right: 15px;
-    /* 50% de transparencia*/
-    color: rgba(100, 149, 237)0.5
+  font-size: 3em;
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-    height: 100vh;
-    /* 100vh - 100% altura da tabela*/
-    background-color: var(--roxo);
-    list-style: none;
-    /*Removendo bullets*/
-    width: 65%;
-    position: fixed;
-    top: 100px;
-    right: -65%;
-    transition: all 0.5s;
+  list-style: none;
+  background-color: var(--azul);
+  height: 100vh;
+  position: fixed;
+  top: 100px;
+  right: -65%;
+  width: 65%;
+  transition: all 0.5s;
+}
+
+#check:checked~ul {
+  right: 0;
 }
 
 nav ul li {
-    padding: 15px 20px 15px 20px;
-    border-bottom: 3px solid var(--branco);
-    text-align: right;
-
+  padding: 15px 20px 15px 20px;
+  border-bottom: 1px solid var(--branco);
+  text-align: right;
 }
 
 nav ul li a {
-    color: #fff;
-    /*remover sublinhado*/
-    text-decoration: none;
+  text-decoration: none;
+  color: #fff;
 }
 
-#logo img {
+/* Destaque */
+main {
+  height: 60vh;
+  background: url(img/Inteligencia-artificial.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#logo img{
     width: 95px;
     height: 90px;
     margin: 0px 70px 80px 0px;
 }
-
-/* Banner */
-main {
-    height: 60vh;
-    /*Ajuste da altura do banner*/
-    background: url(img/cyber-7633492_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-}
-
-main h1,
-h2 {
+main h1
+h2{
     color: var(--branco);
-    /*Adicionar sombra no texto*/
-    text-shadow: #000000 0.05em 0.05en 0.05em;
-
+  text-shadow: #000 0.05em 0.05em 0.05em;
 }
-
 main h1 {
     color: var(--branco);
-    font-size: 2.9em;
+    font-size: 1.5em;
     font-family: "Koulen", sans-serif;
 
 }
 
 main h2 {
     color: var(--branco);
-    font-size: 1.5em;
-    margin-top: 30px;
-    font-weight: 100;
+  font-size: 1.5em;
+  margin-top: 30px;
+  text-shadow: 0px 5px 10px #000,
+    0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1),
+    0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-
-/* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
-
-/*********************destque***********************/
-
-#destaque {
-    background: url(img/artificial-intelligence.jpg);
-    background-size: cover;
-    background-position: center;
-    /*Espaçamento interno para não encostar na borda da tela do dispositivo*/
-    padding: 50px 15px;
+/* Sobre */
+#sobre {
+  padding: 50px 15px;
+  background: url(img/robot.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-/*Atenção!!! Organizando o container após o destque o estilo é aplicado apenas ao container de seção de destaque*/
-#destaque .container {
-    
-    flex-direction: column;
-    align-items: center;
+#destaqueSobre {
+  display: none;
 }
 
-#imagemDestaque img {
-    width: 300px;
-    height: 300px;
-    /*arrendondar uma imagem quadrada*/
-    border-radius: 50%;
+#textoSobre {
+  color: #fff;
+  padding: 0px 10px;
 }
 
-/*Para esconder a imagem usamos display: none no container da imagem | Para exibir novamente em telas maiores usamos "display:block"*/
-
-#textoDestaque {
-
-    color: var(--branco);
+#textoSobre h2 {
+  margin-bottom: 10px;
 }
 
-#textoDestaque h2 {
-    margin-bottom: 20px;
-    
+.TopicosSobre {
+  margin-top: 5px;
 }
 
-#textoDestaque>p {
-    color: var(--branco);
+.TopicosSobre img {
+  margin-right: 5px;
 }
 
-.topicos {
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
-
+/* One page */
+#onepage {
+  padding: 0px;
 }
 
-.topicos img {
-    margin-right: 15px;
+#onepage h2 {
+  margin-bottom: 10px;
 }
 
-.topicos p {
-    font-weight: 700;
+#onepage p {
+  margin-bottom: 15px;
 }
 
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#video iframe {
+  width: 250px;
+  height: 191px;
+  border: 0;
+}
+
+/* Wireframe */
+#wireframe {
+  padding: 50px 0px;
+  background: url(img/artificial-intelligence-.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#textoWire {
+  color: #fff;
+  padding: 0px 5px;
+}
+
+#textoWire h2 {
+  margin-bottom: 10px;
+}
+
+#textoWire p {
+  margin-bottom: 40px;
+}
+
+#textoWire span {
+  display: none;
+}
+
+#qrcode {
+  display: none;
+}
+
+/* Conteúdo */
+#conteudo {
+  padding: 5px 0px;
+}
+
+#conteudo h2 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#todos {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#todos a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+/* Rodapé */
+address {
+  padding: 35px 10px 50px 10px;
+  background: url(img/gif/c172b1488bfe7e47629674c1b490b60f.gif);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+address a {
+  text-decoration: none;
+  color: #fff;
+}
+
+address img {
+  padding-top: 5px;
+}
+
+#iconeLocal {
+  display: none;
+}
+
+#dados {
+  margin: 0px 0px 2px 0px;
+}
+
+#googleMaps {
+  display: none;
+}
+
+footer {
+  padding: 20px 0px;
+  background-color: #343538;
+  font-size: 0.875em;
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#social {
+  margin-bottom: 0px;
+}
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    /******Layout**********/
-    /* Cabeçalho */
 
-    #logo img {
-        margin: 0px 0px 55px 0px;
-    }
+  /* Layout */
+  .Container {
+    max-width: 540px;
+  }
 
-    .container {
-        max-width: 540px;
-        /*background-color: rgb(13, 187, 199);*/
-    }
+  /* Destaque */
+  main {
+    height: 77vh;
+  }
 
-    nav ul {
-        right: -25%;
-        width: 25%;
-    }
+  /* One page */
+  #video iframe {
+    width: 560px;
+    height: 315px;
+  }
 
-    /*Banner*/
-    main {
-        height: 100vh;
-    }
+  /* Rodapé */
+  .Flex5 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    main h1 {
-        font-size: 3em;
-    }
+  #social {
+    margin: 0;
+  }
 }
 
-/********************destaque*************************/
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
 
-#imagemDestaque img {
-    width: 250px;
-    height: 250x;
+  /* Layout */
+  .Container {
+    max-width: 720px;
+  }
 
+  /* Destaque */
+  main {
+    height: 50vh;
+  }
+
+  main h1 {
+    font-size: 5.8em;
+  }
+
+  main h2 {
+    font-size: 2.3em;
+  }
 }
 
-/***destaque***/
-#destaque{
-    /*O Código abaixo fixa o banner */
-    background-attachment: fixed;
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+  /* Layout */
+  .Container {
+    max-width: 960px;
+  } 
 }
-/* Fim | Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-
-/* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
-    /****** Layout ******/
-    .container {
-        max-width: 1140px;
-        /* background-color: #ff009d; */
-    }
+  /* Layout */
+  .Container {
+    max-width: 1140px;
+  }
 
-    /****** Cabeçalho ******/
-    header {
-        height: 100px;
-    }
+  /* Cabeçalho */
+  header {
+    height: 135px;
+  }
 
-    #logo img {
-        width: 194px;
-        height: 194px;
-    }
+  #logo img {
+    width: 416px;
+    height: 260.5px;
+    margin-top: 20px;
+  }
 
-    /* Transformação do menu */
-    label {
-        display: none;
-    }
+  label {
+    display: none;
+  }
 
-    nav ul {
-        margin-top: 25px;
-        width: 100%;
-        height: auto;
-        position: static;
-        /* remover a cor do background */
-        background-color: transparent;
-    }
+  nav ul {
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 40px;
+  }
 
-    nav ul li {
-        float: left;
-        border: 0;
-    }
+  nav ul li {
+    float: left;
+    border: 0;
+  }
 
-    nav ul li a {
-        color: var(--azul);
-    }
+  nav ul li a {
+    color: #343538;
+  }
 
-    nav ul li a:hover {
-        color: var(--amarelo);
-    }
+  nav ul li a:hover {
+    color: #c00000;
+  }
 
-    /****** Banner ******/
-    main h1 {
-        font-size: 6em;
-    }
+  /* Destaque */
+  main {
+    height: 60vh;
+  }
 
-    main h2 {
-        font-size: 3em;
-    }
+  main h1 {
+    font-size: 6.8em;
+  }
+
+  /* Sobre */
+  #sobre {
+    background-attachment: fixed;
+  }
+
+  #destaqueSobre {
+    display: inline;
+  }
+
+  #destaqueSobre img {
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+
+  /* One page */
+  .Flex3 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Wireframe */
+  #wireframe {
+    background-attachment: fixed;
+  }
+
+  #wireframe span {
+    display: inline;
+  }
+
+  #qrcode {
+    display: inline;
+  }
+
+  #qrcode img {
+    width: 225px;
+    height: 225px;
+  }
+
+  /* Rodapé */
+  .Flex6 {
+    flex-direction: row-reverse;
+  }
+
+  address {
+    padding-top: 50px;
+  }
+
+  #iconeLocal {
+    display: inline;
+  }
+
+  #iconeMapa {
+    display: none;
+  }
+
+  #googleMaps {
+    display: inline;
+  }
 }
-
-/* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-
-/* Telas Grandes (FullHD / 4K / SmartTV) >>>>>>>>>>>*/
-@media (min-width: 1400px) {
-
-    /****** Layout ******/
-    .container {
-        max-width: 1360px;
-        /* background-color: #7d5b8c; */
-    }
-
-    /****** Banner ******/
-    main {
-        height: 100vh;
-    }
-
-    main h1 {
-        font-size: 6.5em;
-    }
-
-    main h2 {
-        font-size: 4em;
-    }
-}
-
-/* Fim | Telas Grandes (FullHD / 4K / SmartTV) >>>>>*/
