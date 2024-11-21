@@ -88,7 +88,7 @@ body {
   padding: 5px 0px;
   border: 2px solid var(--preto);
   border-radius: 25px;
-  align-self:center
+  align-self: center;
 }
 
 /* topo do site */
@@ -189,7 +189,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: center; 
 }
 #logo img{
     width: 95px;
@@ -228,6 +228,8 @@ main h2 {
 
 #destaqueSobre {
   display: none;
+  
+
 }
 
 #textoSobre {
@@ -269,7 +271,7 @@ main h2 {
 /* Wireframe */
 #wireframe {
   padding: 50px 0px;
-  background: url(img/artificial-intelligence-.jpg);
+  background: url(img/inteligencia-artificial.png);
   background-size: cover;
   background-position: center;
 }
@@ -320,7 +322,7 @@ main h2 {
 /* Rodapé */
 address {
   padding: 35px 10px 50px 10px;
-  background: url(img/gif/c172b1488bfe7e47629674c1b490b60f.gif);
+  background: url(img/gif/1_2Gf1yEn2_lEOfoDduUOeUg.gif);
   background-size: cover;
   background-position: center;
   color: #fff;
