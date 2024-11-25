@@ -1,5 +1,13 @@
+<p align="center">
+ <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">GitHub Readme Stats</h2>
+ <p align="center">Get dynamically generated GitHub stats on your READMEs!</p>
+</p>
+
+
 ![GitHub License](https://img.shields.io/github/license/Fernandass2/site)
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fgithub.com%2FFernandass2%2Fsite)
+
 
 
 # HTML5 e CSS3 
