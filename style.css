@@ -81,15 +81,20 @@ body {
 .botao {
   text-decoration: none;
   color: var(--roxo);
-  font-size: 1.3em;
-  background-color:  var(--preto);
-  width: 200px;
+  font-size: 1.4em;
+  background-color:  var(--branco);
+  width: 250x;
   font-weight: 700;
-  padding: 3px 0px;
-  border: 2px solid var(--preto);
-  border-radius: 25px;
+  padding: 10;
+  border: 0px solid var(--preto);
+  border-radius: 4px;
   align-self: center;
-  margin-top: 20px;
+  height: 40px;
+  display: inline-block;
+  margin: 30px;
+
+
+  
 }
 
 /* topo do site */
@@ -201,17 +206,19 @@ main h1
 h2{
     color: var(--branco);
     text-shadow: #000 0.05em 0.05em 0.05em;
+    
 }
 main h1 {
     color: var(--branco);
-    font-size: 1.5em;
+    font-size: 2.3em;
     font-family: "Koulen", sans-serif;
+    margin-top: 10px;
 
 }
 
 main h2 {
     color: var(--branco);
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 30px;
     text-shadow: 0px 5px 10px #000,
     0px 10px 10px rgba(0, 0, 0, 0.15),
@@ -221,7 +228,7 @@ main h2 {
 
 /* Sobre */
 #sobre {
-    padding: 50px 15px;
+    padding: 40px 15px;
     background: url(img/robot.jpg);
     background-size: cover;
     background-position: center;
@@ -252,26 +259,29 @@ main h2 {
 
 /* One page */
 #onepage {
-  padding: 0px;
+  padding: 15px;
 }
 
 #onepage h2 {
   margin-bottom: 10px;
+
 }
 
 #onepage p {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  
 }
 
 #video iframe {
   width: 250px;
   height: 191px;
   border: 0;
+  margin-top: 40px;
 }
 
 /* Wireframe */
 #wireframe {
-  padding: 50px 0px;
+  padding: 20px 0px;
   background: url(img/inteligencia-artificial.png);
   background-size: cover;
   background-position: center;
@@ -299,25 +309,27 @@ main h2 {
 }
 
 /* Conteúdo */
-#conteudo {
+
+
+#conteudo .Container {
   padding: 5px 0px;
 }
 
-#conteudo h2 {
-  margin-bottom: 5px;
+#conteudo h2  {
+  margin-bottom: 5px 0px;
   text-align: center;
 }
 
-#todos {
-  margin-top: 5px;
+#todos  {
+  margin: 5px;
   text-align: center;
 }
 
 #todos a {
   text-decoration: none;
   color: #000;
-  font-weight: 100;
-  font-size: 1.5em;
+  font-weight: 10;
+  font-size: 1em;
 }
 
 /* Rodapé */
@@ -347,8 +359,23 @@ address img {
 }
 
 #googleMaps {
-  display: none;
+  
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
+
+.map-responsive iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+
 
 footer {
   padding: 20px 0px;
