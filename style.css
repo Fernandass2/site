@@ -80,12 +80,12 @@ body {
 /* Botão */
 .botao {
   text-decoration: none;
-  color: var(--roxo);
+  color: var(--preto);
   font-size: 1.4em;
-  background-color:  var(--branco);
-  width: 250x;
+  background-color:  var(--roxo);
+  /*width: 250x;*/
   font-weight: 700;
-  padding: 10;
+  /*padding: 10;*/
   border: 0px solid var(--preto);
   border-radius: 4px;
   align-self: center;
@@ -188,7 +188,7 @@ nav ul li a {
 /* Destaque */
 main {
   height: 60vh;
-  background: url(img/Inteligencia-artificial.jpg);
+  background: url(img/Inteligencia1-artificial.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -282,7 +282,7 @@ main h2 {
 /* Wireframe */
 #wireframe {
   padding: 20px 0px;
-  background: url(img/inteligencia-artificial.png);
+  background: url(img/inteligencia-artificial1.png);
   background-size: cover;
   background-position: center;
 }
@@ -316,7 +316,7 @@ main h2 {
 }
 
 #conteudo h2  {
-  margin-bottom: 5px 0px;
+  /*margin-bottom: 5px 0px;*/
   text-align: center;
 }
 
@@ -332,10 +332,12 @@ main h2 {
   font-size: 1em;
 }
 
+
+
 /* Rodapé */
 address {
-  padding: 35px 10px 50px 10px;
-  background: url(img/gif/1_2Gf1yEn2_lEOfoDduUOeUg.gif);
+  padding: 20px 10px 20px 10px;
+  background: url(img/images\ \(1\).jfif);
   background-size: cover;
   background-position: center;
   color: #fff;
