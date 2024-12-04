@@ -6,8 +6,7 @@
 
 
 ![GitHub License](https://img.shields.io/github/license/Fernandass2/site)
-![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fgithub.com%2FFernandass2%2Fsite)
-
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Ffernandass2.github.io%2Fsite%2F)
 
 
 
