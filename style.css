@@ -31,7 +31,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Rolagem suave */
 }
 
 body {
@@ -341,6 +341,7 @@ main h2 {
 
 /* Conteúdo */
 
+
 .botao3 {
   text-decoration: none;
   color: var(--preto);
@@ -367,8 +368,6 @@ main h2 {
 
 #conteudo .Container {
  flex-direction: column;
- 
- 
 
 }
 
@@ -404,17 +403,19 @@ main h2 {
 
 
 /* Rodapé */
+
 address {
   padding: 20px 10px 20px 10px;
-  background: url(img/images\ \(1\).jfif);
+  background: url(img/7.webp);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: black;
+
 }
 
 address a {
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 address img {
@@ -423,10 +424,12 @@ address img {
 
 #iconeLocal {
   display: none;
+  color: black;
 }
 
 #dados {
   margin: 0px 0px 2px 0px;
+  
 }
 
 #googleMaps {
@@ -435,6 +438,7 @@ address img {
     padding-bottom:56.25%;
     position:relative;
     height:0;
+    
 }
 
 .map-responsive iframe{
@@ -454,6 +458,7 @@ footer {
   font-size: 0.875em;
   color: #fff;
   text-align: center;
+
 }
 
 footer a {
@@ -463,6 +468,7 @@ footer a {
 
 #social {
   margin-bottom: 0px;
+  
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
