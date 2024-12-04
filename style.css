@@ -6,7 +6,13 @@
 */
 
 /* Importação (Google Fonts) */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
 /* Variavéis */
 
 :root{
@@ -81,20 +87,18 @@ body {
 .botao {
   text-decoration: none;
   color: var(--preto);
-  font-size: 1.4em;
-  background-color:  var(--roxo);
-  /*width: 250x;*/
+  font-size: 1.3em;
+  background-color:  var(--branco);
+  width: 80px;
   font-weight: 700;
-  /*padding: 10;*/
+  padding: 10px 20px;
   border: 0px solid var(--preto);
-  border-radius: 4px;
+  border-radius: 10px;
   align-self: center;
   height: 40px;
   display: inline-block;
-  margin: 30px;
-
-
-  
+  margin-top: 20px;
+  font-family:cursive;
 }
 
 /* topo do site */
@@ -196,6 +200,7 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center; 
+  font-family:cursive;
 }
 #logo img{
     width: 95px;
@@ -206,12 +211,13 @@ main h1
 h2{
     color: var(--branco);
     text-shadow: #000 0.05em 0.05em 0.05em;
+
     
 }
 main h1 {
     color: var(--branco);
     font-size: 2.3em;
-    font-family: "Koulen", sans-serif;
+    font-family:sans-serif;
     margin-top: 10px;
 
 }
@@ -258,13 +264,17 @@ main h2 {
 }
 
 /* One page */
+
 #onepage {
   padding: 15px;
+  
 }
 
 #onepage h2 {
   margin-bottom: 10px;
-
+ 
+  
+   
 }
 
 #onepage p {
@@ -273,31 +283,52 @@ main h2 {
 }
 
 #video iframe {
-  width: 350px;
-  height: 192px;
+  width: 370px;
+  height: 195px;
   border: 0;
-  margin-top: 40px;
+  margin-top: 50px;
+  
 }
 
 /* Wireframe */
+.botao2 {
+  text-decoration: none;
+  color: var(--preto);
+  font-size: 1em;
+  background-color:  var(--branco);
+  width: 50px;
+  align-self: center;
+  height: 20px;
+  margin-top: 20px;
+  font-family:cursive;
+}
 #wireframe {
   padding: 20px 0px;
   background: url(img/inteligencia-artificial1.png);
   background-size: cover;
   background-position: center;
+ 
+  
 }
 
 #textoWire {
   color: #fff;
   padding: 0px 5px;
+ 
+  
 }
 
 #textoWire h2 {
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif
+
+
 }
 
 #textoWire p {
   margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 #textoWire span {
@@ -310,19 +341,54 @@ main h2 {
 
 /* Conteúdo */
 
+.botao3 {
+  text-decoration: none;
+  color: var(--preto);
+  font-size: 1.3em;
+  background-color:  var(--branco);
+  width: 80px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 0px solid var(--preto);
+  border-radius: 10px;
+  align-self: center;
+  height: 40px;
+  display: inline-block;
+  margin-top: 20px;
+  font-family:cursive;
+}
+
+
+#conteudo{
+  padding: 50px 0px;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+}
 
 #conteudo .Container {
-  padding: 5px 0px;
+ flex-direction: column;
+ 
+ 
+
 }
 
 #conteudo h2  {
-  /*margin-bottom: 5px 0px;*/
-  text-align: center;
+  
+  color: black;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
 }
 
 #todos  {
-  margin: 5px;
-  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: var(--branco);
+  
+ 
 }
 
 #todos a {
@@ -330,6 +396,9 @@ main h2 {
   color: #000;
   font-weight: 10;
   font-size: 1em;
+  text-align: center;
+  
+ 
 }
 
 
