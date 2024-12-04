@@ -89,15 +89,15 @@ body {
   color: var(--preto);
   font-size: 1.3em;
   background-color:  var(--branco);
-  width: 80px;
+  width: 50px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 5px 15px 10px  5px;
   border: 0px solid var(--preto);
   border-radius: 10px;
   align-self: center;
-  height: 40px;
+  height: 30px;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 40px;
   font-family:cursive;
 }
 
@@ -291,11 +291,11 @@ main h2 {
 }
 
 /* Wireframe */
+
 .botao2 {
   text-decoration: none;
-  color: var(--preto);
+  color: var(--branco);
   font-size: 1em;
-  background-color:  var(--branco);
   width: 50px;
   align-self: center;
   height: 20px;
