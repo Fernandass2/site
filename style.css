@@ -468,6 +468,10 @@ footer a {
   
 }
 
+#googleMaps iframe{
+  display: none;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
