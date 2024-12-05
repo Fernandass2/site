@@ -6,17 +6,13 @@
 
 
 ![GitHub License](https://img.shields.io/github/license/Fernandass2/site)
-![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Ffernandass2.github.io%2Fsite%2F)
-
-<p>
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Ffernandass2.github.io%2Fsite%2F)  <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss"
             alt="CSS válido!" />
     </a>
-</p>
-
-<p>
+</p>  <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
