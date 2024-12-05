@@ -405,6 +405,7 @@ address {
   margin: 45px 0px 0px 0px;
   background: url(img/cloud.jpg);
   background-size: cover;
+  text-align: center;
   background-position: center;
   color: var(--branco);
 }
@@ -641,4 +642,10 @@ footer a {
   #googleMaps {
     display: inline;
   }
+
+  .ContainerFlex6 iframe{
+    width: 400px;
+    height: 200px;
+  } 
+
 }
