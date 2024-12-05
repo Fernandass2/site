@@ -394,7 +394,6 @@ main h2 {
   font-weight: 10;
   font-size: 1em;
   text-align: center;
-  
  
 }
 
@@ -408,9 +407,6 @@ address {
   background-size: cover;
   background-position: center;
   color: var(--branco);
- 
- 
-
 }
 
 address a {
@@ -419,12 +415,12 @@ address a {
 }
 
 address img {
-  padding-top: 0px;
+  padding-top: 14px;
 }
 
 #iconeLocal {
   display: none;
-  color: black;
+  color: var(--branco);
 }
 
 #dados {
@@ -435,7 +431,7 @@ address img {
 #googleMaps {
   
     overflow:hidden;
-    padding-bottom: 46%;
+    padding-bottom: 5%;
     position:relative;
     height:0;
     
@@ -445,8 +441,8 @@ address img {
 
     left:0;
     top:0;
-    height:75%%;
-    width: 75%;
+    height:90%;
+    width: 90%;
     position:absolute;
 
 }
@@ -496,6 +492,7 @@ footer a {
     justify-content: space-between;
     align-items: center;
   }
+
 
   #social {
     margin: 0;
