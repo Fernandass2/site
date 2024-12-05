@@ -435,7 +435,8 @@ address img {
     padding-bottom: 5%;
     position:relative;
     height:0;
-    
+    width: 400px;
+    height: 200px;
 }
 
 .map-responsive iframe{
@@ -468,9 +469,6 @@ footer a {
   
 }
 
-#googleMaps iframe{
-  display: none;
-}
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
