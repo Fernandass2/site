@@ -12,7 +12,7 @@ let anoAtual = new Date().getFullYear()
 ano.innerHTML = anoAtual
 
 const main = document.querySelector('main')
-const backgrounds = ['url(img/inteligencia_artificial.jpg)','url(img/unesco.jpg)','url(img/robot.jpg)']
+const backgrounds = ['url(img/cloud.jpg)','url(img/inteligencial2.jpg)','url(img/robot.jpg)']
 
 let indice = 0
 
